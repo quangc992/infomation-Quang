@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #aeb0b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #1d1e24;
+    color: #aeb0b8;
+}
+
+body::selection {
+    background-color: yellow;
+}
+
+.head-image{
+    height: 19.75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.image-bg{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100%;
+    background-image: url(../assets/img/background.png);
+}
+
+.header{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.gutter-top{
+    padding-top: 13rem;
+}
+
+.box{
+    background-color: #23262b;
+    box-shadow: -4px 8px 24px rgb(0 0 0 / 7%);
+}
+
+.box{
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgb(103 118 128 / 3%);
+    padding: 28px;
+}
+
+
+/* > 1001px */
+@media only screen and (min-width: 1001px){
+    .header__right{
+        display: flex;
+        position: relative;
+        flex: 0 0 50%;
+        padding-left: 1.875rem;
+    }
+    .header__left{
+        display: flex;
+        position: relative;
+        flex: 0 0 50%;
+        border-right: 1.25px solid #343a40;
+    }
+    .header{
+        display: flex;
+    }
+    
+    .sidebar{
+        padding: 30px;
+        transition: all .3s ease-in-out;
+    }
+
+}
+
+
+.header__photo{
+    border-radius: 2.9375rem;
+    overflow : hidden;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 5%);
+    margin-top: -80px;
+    height: 10.125rem;
+    width: 10.125rem;
+    border: .375rem solid #fff;
+    background-color: #fff;
+    border-color: #23262B;
+    background-color: #23262B;
+}
+
+.status{
+    color: #aeb0b8;
+    display: flex;
+    padding-top: -5px;
+    font-size: 14px;
+}
+
+.header__base-info{
+    margin-left: 1.5rem;   
+}
+
+.name-info{
+    font-weight: 700;
+    margin-bottom: .125rem;
+    color: #fcfcfc;
+}
+
+.header__social{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.header__social li a i{
+    margin-right: 1rem;
+    color: #aeb0b8;
+}
+
+
+
+.header__contact{
+    width: 50%;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 35px;
+}
+
+.header__contact li{
+    margin-bottom: 15px;
+    color: #fcfcfc;
+    font-size: 15px;
+}
+.header__contact li span{
+    text-transform: uppercase;
+}
+
+.overhead{
+    display: block;
+    font-size: 0.75rem;
+}
+
+
+/* .active{
+    background-image: linear-gradient(
+142.17deg
+,#3086FF 6.66%,#304CFD 91.48%);
+    box-shadow: inset -0.25rem -0.25rem 0.3125rem rgb(0 0 0 / 10%), inset 0.25rem 0.25rem 0.3125rem rgb(255 255 255 / 23%);
+    color: #fff;
+
+    background-image: linear-gradient(
+142.17deg
+,#0DA2FF 6.66%,#0055FF 91.48%);
+    box-shadow: inset -4px -4px 5px rgb(0 0 0 / 20%), inset 4px 4px 5px rgb(255 255 255 / 23%);
+    color: #fcfcfc;
+} */
+
+
+.sidebar{
+    height: auto;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+
+}
+
+.nav__item{
+    display: block;
+    height: 6.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.nav__item a{
+    background-color: #2e2f36;
+    color: #aeb0b8;
+}
+
+.nav__item a{
+    height: 6.25rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-decoration: none;
+    padding-top: 19px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+
+/* @media only screen and (min-width: 768px){ */
+    .nav__item a i{
+        font-size: 40px;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 8px;
+    }
+/* } */
+
+/* content của index */
+.title_home p{
+    font-size: 14px;
+}
+
+.title--h1{
+    font-size: 33px;
+}
+
+.title--h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.title{
+    color: #fff;
+    font-weight: 600;
+}
+
+.title__separate{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.title__separate::after{
+    background-color: #ff965d;
+    width: 35px;
+}
+
+.title__separate::before {
+    background-color: #0d86ff ;
+    width: 100px;
+}
+
+.title__separate::before , .title__separate::after{
+    content: '';
+    height: 5px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    z-index: 1;
+    border-radius: 20px;
+
+}
+
+/* case item skill */
+.mt1{
+    padding-top: 5px;
+}
+
+.case-item{
+    border-radius: 20px;
+    border: 2px solid #ebf0f2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 25px;
+    height: 190px;
+}
+.case-item{
+    border-color: #33363d;
+    margin-bottom: 25px;
+}
+.case-item img{
+    width: 45px;
+}
+
+.case-item h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.case-item__p{
+    padding-top: 12px;
+    
+}
+
+.case-item__p p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* swiper */
+.mt2{
+    padding-top: 5px;
+}
+
+.slide-box{
+    width: 100%;
+    height: auto;
+    background-color: #0d86ff;
+    position: relative;
+    display: flex;
+    padding: 25px;
+    border-radius: 20px;
+    /* align-items: center; */
+    /* justify-items: center; */
+    background-repeat: no-repeat;
+    background-position: right 1.875rem top 1.875rem;
+}
+
+.slide-box{
+    background-image: url(../assets/icon/icon-quote.svg);
+    background-color: #1d1e24;
+}
+
+
+/* https://bennettfeely.com/clippy/ */
+.avt-slogan{
+    width: 75px;
+    height: 75px;
+    /* border-radius: 70px; */
+    flex-direction: column;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+
+.slide-box-status{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.slide-box-status h5{
+    font-weight: 600;
+    color: #fff;
+}
+
+.slide-box-status p{
+    font-size: 14px;
+}
+
+
+.footer{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.mt3{
+    padding-top: 25px;
+}
+
+.client-logo{
+    width: 180px;
+    height: auto;
+    padding: 15px;
+}
+
+
