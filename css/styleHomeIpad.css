@@ -140,12 +140,15 @@
         border-radius: 0;
     }
 
-    .nav__item a{
+    .nav__item a {
         background-color: transparent;
         padding: 10px;
         height: auto;
-        border-bottom:3px solid #0d86ff ;
+        /* border-bottom: 3px solid #0d86ff; */
         border-radius: 0;
+    }
+    .check-border {
+        border-bottom: 3px solid #0d86ff;
     }
 
     .nav__item a i{
