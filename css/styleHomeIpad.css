@@ -106,6 +106,10 @@
     .header__contact {
         padding-left: 15px;
     }
+    
+    ul.header__contact>li {
+        font-size: 10px;
+    }
 }
 
 
