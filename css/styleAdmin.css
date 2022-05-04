@@ -1,0 +1,48 @@
+/* #main_admin {} */
+
+.about_info div {
+    margin-bottom: 20px;
+}
+
+.about_info div {
+    margin-bottom: 20px;
+}
+
+.about_ip_textarea {
+    padding: 10px;
+    height: 150px;
+}
+
+.about_info div label {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.item_table {
+    text-align: center;
+}
+
+.ad_info_show {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.ad_info_show tr th {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+.ad_info_show tr td {
+    padding: 10px;
+    border-radius: 15px;
+    border-right: 1px solid white;
+    margin: 10px;
+}
+
+.ad_info_show tr td:last-child {
+    border-right: none;
+}
