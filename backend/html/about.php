@@ -51,7 +51,7 @@ $infoYou = executeSingleResult($sql);
             </tr>
         </table>
         <hr>
-        <a href="./backend/about/aboutEdit.html?<?=$infoYou['id']?>" target="" class="btn btn-success" >Thay đổi</a>
+        <a href="./backend/about/aboutEdit.php?<?=$infoYou['id']?>" target="" class="btn btn-success" >Thay đổi</a>
         <hr>
     </div>
     

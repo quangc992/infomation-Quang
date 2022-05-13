@@ -1,35 +1,15 @@
-<!DOCTYPE html>
+<?php 
+require("../html/header.php"); 
+require("../../db/dbhelper.php"); 
 
-<head>
+// $sql = "select * from infoyou WHERE id = 1";
+// $info = executeSingleResult($sql);
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- logo -->
-    <link rel="icon" type="image/jpg" href="../../frontend/assets/img/avt.jpg">
-
-    <!-- css bt4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- css icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-
-
-    <title>Infomation</title>
-
-    <link rel="stylesheet" href="../../css/styleAdmin.css">
-    <link rel="stylesheet" href="../../css/styleHome.css">
-</head>
-
-<body>
-    <div class="main mainAdmin">
-        <div class="box">
+?>
             <form action="" method="get" class="formAbout">
                 <div>
                     <label>id</label>
-                    <input type="text" name="id" class="form-control">
+                    <input type="text" name="id" class="form-control" value="<?=$info['id']?>">
                 </div>
                 <div>
                     <label>họ và tên</label>
@@ -76,7 +56,7 @@
                     <input type="text" name="intagram" class="form-control">
                 </div>
                 <div>
-                    <label>discrod</label>
+                    <label>discord</label>
                     <input type="text" name="discord" class="form-control">
                 </div>
                 <div>
@@ -85,13 +65,12 @@
                 </div>
                 <div>
                     <label>giới thiệu bản thân</label>
-                    <input type="text" name="intro" class="form-control">
+                    <textarea class="form-control ip-textarea" name="intro"></textarea>
                 </div>
                 <div>
-                    <input type="submit" class="btn btn-danger" value="Hủy">
+                    <a href="../../backend.php" class="btn btn-danger">Hủy</a>
                     <input type="submit" class="btn btn-success" value="Lưu Thay Đổi">
                 </div>
             </form>
-        </div>
-    </div>
-</body>
+
+<?php require("../html/footer.php"); ?>
