@@ -1,5 +1,35 @@
 /* #main_admin {} */
 
+* {
+    padding: 0;
+    margin: 0;
+    color: #aeb0b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+a::selection,
+li::selection,
+body::selection,
+div::selection,
+label::selection,
+input::selection,
+article::selection {
+    background-color: rgba(0, 0, 0, 0);
+    color: #3055fa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .about_info div {
     margin-bottom: 20px;
 }
@@ -22,27 +52,77 @@
     text-align: center;
 }
 
-.ad_info_show {
+.ad_about_show {
     left: 0;
     right: 0;
     margin: auto;
     margin-bottom: 20px;
 }
 
-.ad_info_show tr th {
+.ad_about_show tr th {
     padding: 10px;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     border-radius: 15px;
 }
 
-.ad_info_show tr td {
+.ad_about_show tr td {
     padding: 10px;
     border-radius: 15px;
     border-right: 1px solid white;
     margin: 10px;
 }
 
-.ad_info_show tr td:last-child {
+.ad_about_show tr td:last-child {
     border-right: none;
+}
+
+
+/* ------------------------ main admin ------------------------ */
+
+.mainAdmin div form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.mainAdmin div {
+    margin: 20px;
+}
+
+.mainAdmin div form {
+    text-align: center;
+}
+
+
+/* ------------------------ form about ------------------------ */
+
+.formAbout label {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-left: 0px;
+}
+
+#btn-submit {
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ------------------------ css responsive------------------------ */
+
+@media only screen and (max-width: 1200px) {
+    .mainAdmin div form {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .mainAdmin div form {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

@@ -14,6 +14,7 @@ h4::selection,
 h5::selection,
 a::selection,
 li::selection,
+div::selection,
 article::selection {
     background-color: rgba(0, 0, 0, 0);
     color: #3055fa;
@@ -45,7 +46,7 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 100%;
-    background-image: url(../fontend/assets/img/background.png);
+    background-image: url("../frontend/assets/img/background.png");
 }
 
 .header {
