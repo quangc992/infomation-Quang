@@ -1,3 +1,3 @@
-<?php require_once("./frontend/html/header.php"); ?>
-<?php require_once("./frontend/html/main.php"); ?>
-<?php require_once("./frontend/html/footer.php");?>
+<?php require("./frontend/html/header.php"); ?>
+<?php require("./frontend/html/main.php"); ?>
+<?php require("./frontend/html/footer.php");?>
